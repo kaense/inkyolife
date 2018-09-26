@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "762501259282",
+    "firebase_url": "https://inkyolife.firebaseio.com",
+    "project_id": "inkyolife",
+    "storage_bucket": "inkyolife.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762501259282:android:d051021f1c16ee3b",
+        "android_client_info": {
+          "package_name": "com.sample.inkyolife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762501259282-suk7st4j4bc5vpsthbcjk2a80stb664i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnI0Rsnuv8Bm5ATbrOd_B8CT6wobAa7zs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

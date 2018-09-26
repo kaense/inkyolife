@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">762501259282-suk7st4j4bc5vpsthbcjk2a80stb664i.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://inkyolife.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">762501259282</string>
+    <string name="google_api_key" translatable="false">AIzaSyBnI0Rsnuv8Bm5ATbrOd_B8CT6wobAa7zs</string>
+    <string name="google_app_id" translatable="false">1:762501259282:android:d051021f1c16ee3b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBnI0Rsnuv8Bm5ATbrOd_B8CT6wobAa7zs</string>
+    <string name="google_storage_bucket" translatable="false">inkyolife.appspot.com</string>
+</resources>

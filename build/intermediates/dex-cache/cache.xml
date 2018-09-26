@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\tanaka\AndroidStudioProjects\inkyolife\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\tanaka\AndroidStudioProjects\inkyolife\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_3bfbb0725eb3ec04d4e8897914b099305bd2778a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\tanaka\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.6\b036abbb61656165da99cf44898e4b9123687e65\MPAndroidChart-v2.1.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b036abbb61656165da99cf44898e4b9123687e65">
+        <dex dex="C:\Users\tanaka\AndroidStudioProjects\inkyolife\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v2.1.6_de8b2aac980a4ccb69841900e970c9e2acdcc149\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\tanaka\AndroidStudioProjects\inkyolife\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07857ffea6ad6f806820b7e0171f9e60f06aaa69">
+        <dex dex="C:\Users\tanaka\AndroidStudioProjects\inkyolife\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_c7c978d9587bbf2db5cc1fc106fc34eb404de8f0\classes.dex" />
+    </item>
+
+</items>
