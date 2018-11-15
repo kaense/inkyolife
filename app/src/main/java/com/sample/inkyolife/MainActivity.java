@@ -1,22 +1,23 @@
 package com.sample.inkyolife;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.SpannableStringBuilder;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.github.mikephil.charting.animation.Easing;
-import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.XAxis;
-import com.github.mikephil.charting.data.Entry;
-import com.github.mikephil.charting.data.LineData;
-import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.utils.ColorTemplate;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
     static protected SharedPreferences sharedPreferences;
     static protected SharedPreferences.Editor editor;
     static protected float key_age, key_saving, key_payment;
+
+    InputMethodManager inputMethodManager;
+    LinearLayout activity_main;
 
 
     @Override
@@ -73,11 +77,48 @@ public class MainActivity extends AppCompatActivity implements TextWatcher {
         }
 
 
-        MobileAds.initialize(getApplicationContext(), "");
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-6789227322694215~3054932288");
         AdView mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
+        //画面全体のレイアウト
+        activity_main = (LinearLayout)findViewById(R.id.activity_main);
+        //キーボード表示を制御するためのオブジェクト
+        inputMethodManager = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+    }
+
+    /**
+     * EditText編集時に背景をタップしたらキーボードを閉じるようにするタッチイベントの処理
+     */
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        //キーボードを隠す
+        inputMethodManager.hideSoftInputFromWindow(activity_main.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+        //背景にフォーカスを移す
+        activity_main.requestFocus();
+
+        return false;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        switch (itemId){
+            case R.id.privacyPolicy:
+                Uri uri = Uri.parse("https://komugiapp.blogspot.com/2018/09/blog-post.html");
+                Intent i = new Intent(Intent.ACTION_VIEW,uri);
+                startActivity(i);
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

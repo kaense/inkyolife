@@ -7,4 +7,5 @@
     <string name="google_app_id" translatable="false">1:762501259282:android:d051021f1c16ee3b</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBnI0Rsnuv8Bm5ATbrOd_B8CT6wobAa7zs</string>
     <string name="google_storage_bucket" translatable="false">inkyolife.appspot.com</string>
+    <string name="project_id" translatable="false">inkyolife</string>
 </resources>
